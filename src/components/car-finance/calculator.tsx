@@ -11,6 +11,7 @@ import {
   type Metric,
   type RowBy,
   type Scenario,
+  buildDealerMessage,
   calc,
   fmt,
   fmtK,
@@ -26,6 +27,7 @@ import {
   toggleValue,
 } from '@/lib/car-finance';
 import Container from '@/components/global/container';
+import DealerMessage from '@/components/car-finance/dealer-message';
 
 type FieldConfig = {
   id: FieldId;
@@ -280,7 +282,7 @@ const Calculator = () => {
 
   return (
     <section id="calculator" className="relative w-full py-20 md:py-28 bg-background">
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <Container delay={0.05}>
           <p className="text-sm font-mono text-foreground/40 mb-4">&lt;calculator&gt;</p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground tracking-tight mb-2">
@@ -292,9 +294,10 @@ const Calculator = () => {
         </Container>
 
         <Container delay={0.1}>
+          <div className="mb-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
           <div
             id="result"
-            className="scroll-mt-28 mb-12 rounded-2xl border border-foreground/10 bg-background p-6 md:p-8"
+            className="scroll-mt-28 rounded-2xl border border-foreground/10 bg-background p-6 md:p-8"
             aria-live="polite"
           >
             <p className="text-xs font-mono text-foreground/40 mb-2">Left each month after the car</p>
@@ -402,6 +405,8 @@ const Calculator = () => {
                 the balloon.
               </p>
             ) : null}
+          </div>
+          <DealerMessage message={buildDealerMessage(S, result)} />
           </div>
         </Container>
 

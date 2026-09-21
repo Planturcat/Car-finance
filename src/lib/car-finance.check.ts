@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {
   DEFAULT_S,
   STORAGE_KEY,
+  buildDealerMessage,
   calc,
   fmt,
   fmtK,
@@ -95,6 +96,14 @@ assert.deepEqual(mergeStored('not-json').S, { ...DEFAULT_S });
 assert.deepEqual(toggleValue([60], 60), [60]);
 assert.deepEqual(toggleValue([60, 72], 60), [72]);
 assert.deepEqual(toggleValue([60], 72), [60, 72]);
+
+const msg = buildDealerMessage(S, base);
+assert.ok(msg.includes(priceLabel(S.price)));
+assert.ok(msg.includes(fmt(base.payment)));
+assert.ok(!msg.toLowerCase().includes('bmw'));
+assert.ok(!msg.includes('\u2014'));
+assert.ok(msg.includes(`${S.rate}%`));
+assert.ok(msg.includes(`${base.term} months`));
 
 console.log('car-finance checks passed');
 console.log(

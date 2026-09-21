@@ -196,6 +196,34 @@ export function leftStatus(S: Scenario, left: number): 'bad' | 'warn' | 'good' {
   return left < 0 ? 'bad' : left < S.minLeft ? 'warn' : 'good';
 }
 
+/** Casual dealer WhatsApp / clipboard message from the current deal. */
+export function buildDealerMessage(S: Scenario, result: CalcResult): string {
+  const lines: string[] = [
+    "Hey - looking to finance a car and wanted to share the bracket I'm aiming for.",
+    '',
+    `Price around ${priceLabel(S.price)}`,
+  ];
+
+  if (S.deposit > 0) {
+    lines.push(`Deposit: ${fmt(S.deposit)}`);
+  }
+
+  lines.push(
+    `Interest: ~${S.rate}% a year`,
+    `Term: ${result.term} months`,
+    S.balloon > 0
+      ? `Balloon: ${S.balloon}% (~${fmt(result.balloon)})`
+      : 'Balloon: none',
+    `Monthly payment I'm comfortable with: around ${fmt(result.payment)}`,
+    '',
+    "If you can quote something in this shape, I'd love to chat.",
+    '',
+    'Thanks!'
+  );
+
+  return lines.join('\n');
+}
+
 export function parseList(str: string, isPrice: boolean): number[] {
   const out: number[] = [];
   String(str)
