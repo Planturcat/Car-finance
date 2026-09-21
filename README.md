@@ -1,5 +1,7 @@
 # Neros Finance Application
 
+**Repo:** [github.com/Planturcat/Car-finance](https://github.com/Planturcat/Car-finance)
+
 An open-source car finance calculator — a Next.js marketing site with real client-side finance logic.
 
 Built by **Nazeer** while shopping for a vehicle. Spreadsheets and chatbots got old; this is the tool to reopen each month and ask: can I afford this deal, what’s left after real expenses, and what happens if I trade early?
