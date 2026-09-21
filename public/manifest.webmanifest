@@ -1,7 +1,7 @@
 {
   "name": "Neros Finance Application",
   "short_name": "Neros Finance",
-  "description": "Open-source car finance calculator by Nazeer — payment, balloon, budget leftover, and early trade estimates.",
+  "description": "Open-source car finance calculator by Nazeer  payment, balloon, budget leftover, and early trade estimates.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

@@ -32,7 +32,7 @@ const CarFinanceHero = () => {
             <Container delay={0.1}>
               <Image
                 src="/images/icon.png"
-                alt="Nazeer Yazeed Ngunga — Neros Finance"
+                alt="Nazeer Yazeed Ngunga  Neros Finance"
                 width={1536}
                 height={1024}
                 className="h-16 md:h-20 w-auto rounded-lg"
@@ -50,7 +50,7 @@ const CarFinanceHero = () => {
 
             <Container delay={0.35}>
               <p className="text-base lg:text-lg text-foreground/70 leading-relaxed max-w-lg">
-                I built this while shopping for a vehicle — tired of re-running numbers every month
+                I built this while shopping for a vehicle  tired of re-running numbers every month
                 and explaining my budget to chatbots. Open source, by Nazeer: payment, balloon,
                 leftover cash, and what you&apos;d still owe if you trade early.
               </p>

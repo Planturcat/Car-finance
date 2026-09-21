@@ -21,7 +21,7 @@ const PRODUCT_MENU = [
 const BrandMark = ({ className }: { className?: string }) => (
   <Image
     src="/images/icon.png"
-    alt="Neros Finance — Nazeer Yazeed Ngunga"
+    alt="Neros Finance  Nazeer Yazeed Ngunga"
     width={1536}
     height={1024}
     className={className}

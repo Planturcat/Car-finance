@@ -5,7 +5,7 @@ import Container from '../global/container';
 const ITEMS = [
   {
     q: 'Why does this exist?',
-    a: 'Nazeer built Neros Finance Application while looking to buy a car — to check affordability, residual risk, and monthly leftover without rebuilding the maths every time. It’s open source so others can use it or learn from a Next.js site that mixes marketing UI with real client-side logic.',
+    a: 'Nazeer built Neros Finance Application while looking to buy a car  to check affordability, residual risk, and monthly leftover without rebuilding the maths every time. It’s open source so others can use it or learn from a Next.js site that mixes marketing UI with real client-side logic.',
   },
   {
     q: 'Is this a quote from a bank?',

@@ -20,7 +20,7 @@ interface MetadataProps {
 export const generateMetadata = ({
   title = 'Neros Finance Application',
   description =
-    'Open-source car finance calculator by Nazeer — monthly payment, balloon, budget leftover, and early trade estimates.',
+    'Open-source car finance calculator by Nazeer  monthly payment, balloon, budget leftover, and early trade estimates.',
   image = '/images/icon.png',
   icons = {
     icon: [{ url: '/images/icon.png', type: 'image/png' }],

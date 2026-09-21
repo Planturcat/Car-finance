@@ -6,7 +6,7 @@ const STEPS = [
   {
     tag: '// 01',
     title: 'Enter the deal',
-    body: 'Price, deposit, rate, term, and balloon — plus optional bank fees if you have them.',
+    body: 'Price, deposit, rate, term, and balloon  plus optional bank fees if you have them.',
   },
   {
     tag: '// 02',
@@ -32,7 +32,7 @@ const CarFinanceHow = () => {
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mb-16 md:mb-20 leading-relaxed">
               Standard amortisation with the balloon due at the end of the term. Compare scenarios
-              before you talk to a dealer — the same workflow I use when a new quote lands.
+              before you talk to a dealer  the same workflow I use when a new quote lands.
             </p>
           </Container>
 

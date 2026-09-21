@@ -14,14 +14,14 @@ const Footer = () => {
             <Link href="/#home" className="hover:opacity-80 transition-opacity duration-300">
               <Image
                 src="/images/icon.png"
-                alt="Neros Finance — Nazeer Yazeed Ngunga"
+                alt="Neros Finance  Nazeer Yazeed Ngunga"
                 width={1536}
                 height={1024}
                 className="h-14 w-auto rounded-lg"
               />
             </Link>
             <p className="text-sm mt-4 text-muted-foreground leading-relaxed">
-              Open-source car finance estimates by Nazeer — payment, balloon, budget leftover, and
+              Open-source car finance estimates by Nazeer  payment, balloon, budget leftover, and
               early trade. Not a bank quote, and not financial advice.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-6">

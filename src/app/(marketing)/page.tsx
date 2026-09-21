@@ -8,7 +8,7 @@ import { getSiteUrl } from '@/lib/site-url';
 
 const title = 'Neros Finance Application';
 const description =
-  'Open-source car finance calculator by Nazeer — monthly payment, balloon, budget leftover, and early trade estimates.';
+  'Open-source car finance calculator by Nazeer  monthly payment, balloon, budget leftover, and early trade estimates.';
 
 export const metadata: Metadata = {
   title: { absolute: title },
