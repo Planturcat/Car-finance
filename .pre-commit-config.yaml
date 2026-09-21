@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+        exclude: "tsconfig.*\\.json$"
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  # JavaScript/TypeScript hooks for client
+  - repo: local
+    hooks:
+      - id: eslint-fix
+        name: ESLint Fix
+        entry: bash -c 'npm run lint -- --fix'
+        language: system
+        files: ^src/.*\.(js|jsx|ts|tsx)$
+        pass_filenames: false
+
+      - id: prettier-format
+        name: Prettier Format
+        entry: bash -c 'npm run format'
+        language: system
+        files: ^src/.*\.(js|jsx|ts|tsx|css|json)$
+        pass_filenames: false
