@@ -22,16 +22,22 @@ export const metadata: Metadata = {
     'open source',
   ],
   authors: [{ name: 'Nazeer' }],
+  icons: {
+    icon: [{ url: '/images/icon.png', type: 'image/png' }],
+    apple: [{ url: '/images/icon.png', type: 'image/png' }],
+  },
   openGraph: {
     title,
     description,
     type: 'website',
     siteName: title,
+    images: [{ url: '/images/icon.png', width: 1536, height: 1024, alt: title }],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
+    images: ['/images/icon.png'],
   },
 };
 

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Footer } from '@/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
@@ -17,6 +18,17 @@ const PRODUCT_MENU = [
   { label: 'Notes', href: '/#disclaimer' },
 ];
 
+const BrandMark = ({ className }: { className?: string }) => (
+  <Image
+    src="/images/icon.png"
+    alt="Neros Finance — Nazeer Yazeed Ngunga"
+    width={1536}
+    height={1024}
+    className={className}
+    priority
+  />
+);
+
 const MarketingLayout = ({ children }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,9 +38,10 @@ const MarketingLayout = ({ children }: Props) => {
         <div className="md:hidden flex items-center justify-between px-6 py-3 w-full rounded-xl backdrop-blur-lg bg-background/80 border border-foreground/10">
           <Link
             href="/#home"
-            className="font-heading font-bold text-sm tracking-tight text-foreground hover:opacity-80 transition-opacity duration-300"
+            className="flex items-center hover:opacity-80 transition-opacity duration-300"
+            aria-label="Neros Finance home"
           >
-            Neros Finance
+            <BrandMark className="h-9 w-auto rounded-md" />
           </Link>
 
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-1" aria-label="Menu">
@@ -43,9 +56,10 @@ const MarketingLayout = ({ children }: Props) => {
         <div className="hidden md:block">
           <Link
             href="/#home"
-            className="inline-block p-3 font-heading font-bold text-base tracking-tight text-foreground hover:opacity-80 transition-opacity duration-300"
+            className="inline-flex items-center p-2 hover:opacity-80 transition-opacity duration-300"
+            aria-label="Neros Finance home"
           >
-            Neros Finance
+            <BrandMark className="h-11 w-auto rounded-lg" />
           </Link>
         </div>
 

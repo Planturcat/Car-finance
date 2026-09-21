@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '../global/container';
 import Wrapper from '../global/wrapper';
 import { Button } from '../ui/button';
@@ -10,10 +11,16 @@ const Footer = () => {
       <Container>
         <Wrapper className="relative flex flex-col md:flex-row justify-between gap-10 pb-16">
           <div className="flex flex-col items-start max-w-sm">
-            <p className="font-heading font-bold text-lg tracking-tight text-foreground">
-              Neros Finance
-            </p>
-            <p className="text-sm mt-3 text-muted-foreground leading-relaxed">
+            <Link href="/#home" className="hover:opacity-80 transition-opacity duration-300">
+              <Image
+                src="/images/icon.png"
+                alt="Neros Finance — Nazeer Yazeed Ngunga"
+                width={1536}
+                height={1024}
+                className="h-14 w-auto rounded-lg"
+              />
+            </Link>
+            <p className="text-sm mt-4 text-muted-foreground leading-relaxed">
               Open-source car finance estimates by Nazeer — payment, balloon, budget leftover, and
               early trade. Not a bank quote, and not financial advice.
             </p>

@@ -8,7 +8,7 @@ export const DEFAULT_S = {
   balloon: 15,
   initFee: 0,
   adminFee: 0,
-  takeHome: 22500,
+  takeHome: 40000,
   expenses: 7500,
   insurance: 2500,
   running: 0,

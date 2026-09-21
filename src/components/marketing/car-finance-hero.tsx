@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRightIcon } from 'lucide-react';
 import { BlurText } from '../ui/blur-text';
 import { Button } from '../ui/button';
@@ -29,9 +30,14 @@ const CarFinanceHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
           <div className="flex flex-col items-start text-left space-y-6">
             <Container delay={0.1}>
-              <p className="text-sm md:text-base font-heading font-bold tracking-tight text-foreground">
-                Neros Finance Application
-              </p>
+              <Image
+                src="/images/icon.png"
+                alt="Nazeer Yazeed Ngunga — Neros Finance"
+                width={1536}
+                height={1024}
+                className="h-16 md:h-20 w-auto rounded-lg"
+                priority
+              />
             </Container>
 
             <Container delay={0.2}>
@@ -72,34 +78,15 @@ const CarFinanceHero = () => {
               <div className="absolute -bottom-2 -left-2 w-10 h-10 border-l-2 border-b-2 border-primary/40 group-hover:border-primary transition-colors duration-300 z-20" />
               <div className="absolute -bottom-2 -right-2 w-10 h-10 border-r-2 border-b-2 border-primary/40 group-hover:border-primary transition-colors duration-300 z-20" />
 
-              <div className="relative overflow-hidden rounded-2xl border border-foreground/10 bg-foreground text-background min-h-[320px] md:min-h-[420px] p-8 md:p-10 flex flex-col justify-between">
-                <div
-                  className="absolute inset-0 opacity-20 pointer-events-none"
-                  style={{
-                    backgroundImage: 'url(/images/noise.svg)',
-                    backgroundSize: '120px 120px',
-                  }}
-                  aria-hidden
+              <div className="relative overflow-hidden rounded-2xl border border-foreground/10 bg-black min-h-[280px] md:min-h-[400px]">
+                <Image
+                  src="/images/icon.png"
+                  alt="Nazeer Yazeed Ngunga"
+                  fill
+                  className="object-contain p-6 md:p-10"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
                 />
-                <div className="relative">
-                  <p className="text-xs font-mono text-background/50 mb-3">{'//'} left each month</p>
-                  <p className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight">
-                    R 4,280
-                  </p>
-                  <p className="mt-3 text-sm text-background/60 max-w-xs leading-relaxed">
-                    After finance, insurance, and running costs — so you can see if the deal fits.
-                  </p>
-                </div>
-                <div className="relative grid grid-cols-2 gap-6 pt-8 border-t border-background/15">
-                  <div>
-                    <p className="text-xs font-mono text-background/45 mb-1">payment</p>
-                    <p className="text-lg font-heading font-bold">R 6,450</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-mono text-background/45 mb-1">balloon</p>
-                    <p className="text-lg font-heading font-bold">25%</p>
-                  </div>
-                </div>
               </div>
             </div>
           </Container>
