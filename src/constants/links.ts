@@ -11,8 +11,8 @@ export const FOOTER_LINKS = [
   {
     title: 'Notes',
     links: [
-      { name: 'Disclaimer', href: '/#disclaimer' },
-      { name: 'Estimates only', href: '/#disclaimer' },
+      { name: 'Why this exists', href: '/#disclaimer' },
+      { name: 'A few notes', href: '/#disclaimer' },
     ],
   },
 ];

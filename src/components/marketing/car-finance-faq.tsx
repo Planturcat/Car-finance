@@ -5,15 +5,15 @@ import Container from '../global/container';
 const ITEMS = [
   {
     q: 'Why does this exist?',
-    a: 'Nazeer built Neros Finance Application while looking to buy a car  to check affordability, residual risk, and monthly leftover without rebuilding the maths every time. It’s open source so others can use it or learn from a Next.js site that mixes marketing UI with real client-side logic.',
+    a: 'I just wanted to calculate the financials myself  payment, leftover cash, balloons, the lot. Also I want a BMW. This is how I’m trying to see if that’s a plan or a cry for help.',
   },
   {
     q: 'Is this a quote from a bank?',
-    a: 'No. Results are estimates from standard amortisation. Real offers may add fees, VAT, or a different rate method.',
+    a: 'No. It’s a quick estimate so you can play with numbers before talking to anyone in a suit.',
   },
   {
     q: 'What does “left over” mean?',
-    a: 'Take-home pay minus expenses, insurance, running costs, and the finance payment. Status colours flag when you’re under your minimum buffer.',
+    a: 'Take-home pay minus expenses, insurance, running costs, and the finance payment. Colours flag when you’re under your minimum buffer.',
   },
   {
     q: 'What is the compare grid for?',
@@ -29,11 +29,11 @@ const CarFinanceFaq = () => {
           <Container delay={0.1}>
             <p className="text-sm font-mono text-foreground/40 mb-4">&lt;notes&gt;</p>
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground tracking-tight mb-6">
-              Estimates, not advice
+              A few notes
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mb-14 leading-relaxed">
-              Use this tool to explore numbers. It isn&apos;t financial advice and shouldn&apos;t
-              replace a formal quote or professional guidance. MIT-licensed open source by Nazeer.
+              Built to run the numbers on a car deal  mostly so I can keep telling myself that BMW
+              is still on the table.
             </p>
           </Container>
 

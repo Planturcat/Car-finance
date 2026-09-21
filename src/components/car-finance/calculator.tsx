@@ -786,9 +786,8 @@ const Calculator = () => {
         </Container>
 
         <p className="mt-12 text-xs text-foreground/45 leading-relaxed max-w-2xl">
-          Standard amortisation with the balloon paid as one lump sum at the end of the term. Real
-          quotes may add fees, VAT and a different rate calculation, so treat these as estimates.
-          This isn&apos;t financial advice.
+          Standard amortisation with the balloon at the end of the term. Real quotes may differ 
+          fees, VAT, rate methods  so treat these as estimates while you chase that BMW dream.
         </p>
       </div>
     </section>

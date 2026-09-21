@@ -50,9 +50,9 @@ const CarFinanceHero = () => {
 
             <Container delay={0.35}>
               <p className="text-base lg:text-lg text-foreground/70 leading-relaxed max-w-lg">
-                I built this while shopping for a vehicle  tired of re-running numbers every month
-                and explaining my budget to chatbots. Open source, by Nazeer: payment, balloon,
-                leftover cash, and what you&apos;d still owe if you trade early.
+                I wanted a simple place to calculate the financials on a car  payment, balloon,
+                what&apos;s left after real life costs. Also I want a BMW. This is me checking
+                whether that&apos;s ambition or denial.
               </p>
             </Container>
 

@@ -21,8 +21,8 @@ const Footer = () => {
               />
             </Link>
             <p className="text-sm mt-4 text-muted-foreground leading-relaxed">
-              Open-source car finance estimates by Nazeer  payment, balloon, budget leftover, and
-              early trade. Not a bank quote, and not financial advice.
+              Run the numbers on a car deal  payment, balloon, leftover cash. Built because I
+              wanted to calculate the financials myself (and maybe justify a BMW).
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-6">
               <Button asChild className="shadow-none">
@@ -57,7 +57,7 @@ const Footer = () => {
       <Container>
         <Wrapper className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-foreground/10">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            &copy; {new Date().getFullYear()} Nazeer · Neros Finance Application · MIT
+            &copy; {new Date().getFullYear()} Nazeer · Neros Finance
           </p>
         </Wrapper>
       </Container>
