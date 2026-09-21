@@ -21,7 +21,7 @@ export const generateMetadata = ({
   title = 'Neros Finance Application',
   description =
     'Open-source car finance calculator by Nazeer  monthly payment, balloon, budget leftover, and early trade estimates.',
-  image = '/images/icon.png',
+  image = '/images/og.jpg',
   icons = {
     icon: [{ url: '/images/icon.png', type: 'image/png' }],
     apple: [{ url: '/images/icon.png', type: 'image/png' }],
@@ -74,8 +74,8 @@ export const generateMetadata = ({
         images: [
           {
             url: imageUrl,
-            width: 1536,
-            height: 1024,
+            width: 1024,
+            height: 535,
             alt: title,
           },
         ],
